@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(239, 10, 10);
+    display: flex;
+    justify-content: center;
+    h1 {
+        font: 2.5em 'Roboto', sans-serif;
+    }
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    p {
+        font: 1em 'Roboto', sans-serif;
+    }
+}

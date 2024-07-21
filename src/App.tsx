@@ -1,8 +1,16 @@
-function App () {
+import Calculator from './Calculator';
+
+function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <>
+      <header>
+        <h1>Calculator</h1>
+      </header>
+      <Calculator />
+      <footer>
+        <p>© 2024 MSG</p>
+      </footer>
+    </>
   )
 }
 
