@@ -12,6 +12,7 @@ const Calculator = () => {
     else {
       setDisplay(display + x);
     }
+    setChanged(true);
   }
 
   function operator(op: string) {
@@ -26,17 +27,23 @@ const Calculator = () => {
       setLastDisplay(display + op);
       setDisplay('');
     }
+    setChanged(true);
   }
 
   function compute() {
+    if (!changed) {
+      return;
+    }
     const output = lastDisplay + display;
     setLastDisplay(output);
     setDisplay(eval(output.replace('x', '*').replace('÷', '/').replace('%', '/100')));
+    setChanged(false);
   }
 
   function clean() {
     setLastDisplay('');
     setDisplay('');
+    setChanged(false);
   }
 
   return (
